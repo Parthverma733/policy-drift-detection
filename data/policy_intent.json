@@ -1,0 +1,46 @@
+{
+  "scheme_name": "Rural Education Support Scheme",
+  "target_groups": [
+    {
+      "name": "priority_districts",
+      "criteria": {
+        "literacy_rate": {"max": 65.0},
+        "population": {"min": 50000}
+      },
+      "allocation_priority": 1
+    },
+    {
+      "name": "standard_districts",
+      "criteria": {
+        "literacy_rate": {"min": 65.0, "max": 80.0}
+      },
+      "allocation_priority": 2
+    }
+  ],
+  "constraints": [
+    {
+      "type": "minimum_coverage",
+      "metric": "coverage_percentage",
+      "threshold": 75.0,
+      "applies_to": "priority_districts"
+    },
+    {
+      "type": "temporal_consistency",
+      "metric": "monthly_variance",
+      "threshold": 15.0,
+      "applies_to": "all"
+    },
+    {
+      "type": "resource_allocation",
+      "metric": "fund_utilization",
+      "threshold": 60.0,
+      "applies_to": "priority_districts"
+    }
+  ],
+  "target_metrics": {
+    "coverage_percentage": {"min": 70.0},
+    "fund_utilization": {"min": 55.0},
+    "monthly_variance": {"max": 20.0}
+  }
+}
+
