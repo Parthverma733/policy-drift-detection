@@ -1,0 +1,22 @@
+district,month,coverage,fund_utilization,fund_allocation
+Rural District Alpha,2024-Q1,72,83,200000
+Rural District Alpha,2024-Q2,68,79,200000
+Rural District Alpha,2024-Q3,65,76,200000
+Rural District Beta,2024-Q1,78,88,250000
+Rural District Beta,2024-Q2,82,91,250000
+Rural District Beta,2024-Q3,80,89,250000
+Rural District Gamma,2024-Q1,76,86,180000
+Rural District Gamma,2024-Q2,74,84,180000
+Rural District Gamma,2024-Q3,71,81,180000
+Rural District Delta,2024-Q1,55,65,120000
+Rural District Delta,2024-Q2,52,62,120000
+Rural District Delta,2024-Q3,48,58,120000
+Remote District Echo,2024-Q1,0,0,0
+Remote District Echo,2024-Q2,0,0,0
+Remote District Echo,2024-Q3,0,0,0
+Rural District Foxtrot,2024-Q1,79,90,220000
+Rural District Foxtrot,2024-Q2,85,95,220000
+Rural District Foxtrot,2024-Q3,88,98,220000
+Rural District Golf,2024-Q1,73,82,190000
+Rural District Golf,2024-Q2,70,78,190000
+Rural District Golf,2024-Q3,67,75,190000
