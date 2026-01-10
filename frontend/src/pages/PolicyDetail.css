@@ -1,15 +1,18 @@
 .policy-detail {
-  padding: 30px;
+  padding: 32px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
 }
 
 .detail-header {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .detail-header h2 {
-  color: #374151;
-  font-size: 1.8rem;
+  color: #f8fafc;
+  font-size: 2rem;
   margin-top: 15px;
+  font-weight: 700;
 }
 
 .detail-content {
@@ -18,36 +21,43 @@
   gap: 30px;
 }
 
+
 .detail-section {
-  background: #f9fafb;
-  padding: 20px;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 22px;
+  border-radius: 14px;
+  border-left: 4px solid #6366f1;
+  backdrop-filter: blur(10px);
 }
 
 .detail-section h3 {
-  color: #374151;
+  color: #f8fafc;
   font-size: 1.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  font-weight: 600;
 }
+
 
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+  gap: 16px;
 }
 
 .info-item {
-  padding: 12px;
-  background: white;
-  border-radius: 6px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
   font-size: 0.95rem;
+  color: #cbd5f5;
+  backdrop-filter: blur(10px);
 }
 
 .info-item strong {
-  color: #374151;
+  color: #f8fafc;
   margin-right: 8px;
 }
+
 
 .intent-display {
   display: flex;
@@ -56,15 +66,17 @@
 }
 
 .intent-group {
-  background: white;
-  padding: 15px;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
 }
 
 .intent-group h4 {
-  color: #374151;
-  margin-bottom: 10px;
+  color: #f8fafc;
+  margin-bottom: 12px;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .intent-group ul {
@@ -73,9 +85,9 @@
 }
 
 .intent-group li {
-  padding: 8px 0;
-  border-bottom: 1px solid #e5e7eb;
-  color: #6b7280;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #cbd5f5;
 }
 
 .intent-group li:last-child {
@@ -83,9 +95,10 @@
 }
 
 .intent-group li strong {
-  color: #374151;
+  color: #f8fafc;
   margin-right: 8px;
 }
+
 
 .dataset-actions {
   margin-bottom: 20px;
@@ -94,34 +107,43 @@
 .datasets-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .dataset-card {
-  background: white;
-  padding: 15px;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #e5e7eb;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.dataset-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .dataset-info {
-  color: #6b7280;
+  color: #cbd5f5;
   font-size: 0.9rem;
 }
 
 .dataset-info strong {
-  color: #374151;
-  margin-right: 5px;
+  color: #f8fafc;
+  margin-right: 6px;
 }
 
+
 .empty-message {
-  color: #6b7280;
+  color: #cbd5f5;
   font-style: italic;
   text-align: center;
-  padding: 20px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {

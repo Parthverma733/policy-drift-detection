@@ -1,87 +1,106 @@
 .drift-dashboard {
-  padding: 30px;
+  padding: 32px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
 }
 
 .drift-dashboard h2 {
-  color: #374151;
-  font-size: 1.8rem;
+  color: #f8fafc;
+  font-size: 2rem;
   margin-bottom: 30px;
+  font-weight: 700;
 }
+
 
 .summary-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .summary-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 25px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  padding: 26px;
+  border-radius: 14px;
   text-align: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(99, 102, 241, 0.45);
 }
 
 .summary-value {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 6px;
 }
 
 .summary-label {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   opacity: 0.9;
 }
 
+
 .filters-section {
-  background: #f9fafb;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(10px);
 }
 
 .filters-section h3 {
-  color: #374151;
-  margin-bottom: 15px;
+  color: #f8fafc;
+  margin-bottom: 16px;
   font-size: 1.2rem;
 }
 
 .filters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  gap: 16px;
 }
 
 .filter-input {
-  padding: 10px;
-  border: 2px solid #e5e7eb;
-  border-radius: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
   font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+
+.filter-input::placeholder {
+  color: #cbd5f5;
 }
 
 .filter-input:focus {
   outline: none;
-  border-color: #667eea;
+  box-shadow: 0 0 0 2px #6366f1;
 }
 
 .chart-section {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  border: 2px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(10px);
 }
 
 .chart-section h3 {
-  color: #374151;
+  color: #f8fafc;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
 
+
 .drifts-list h3 {
-  color: #374151;
+  color: #f8fafc;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
@@ -89,24 +108,25 @@
 .no-drifts {
   text-align: center;
   padding: 40px;
-  background: #d1fae5;
-  border-radius: 8px;
-  color: #065f46;
+  background: linear-gradient(135deg, #064e3b, #065f46);
+  border-radius: 12px;
+  color: #ecfdf5;
   font-size: 1.1rem;
 }
 
+
 .drift-card {
-  background: white;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 22px;
   margin-bottom: 20px;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
 }
 
 .drift-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .drift-header {
@@ -117,23 +137,24 @@
 }
 
 .drift-number {
-  font-weight: bold;
-  color: #667eea;
+  font-weight: 700;
+  color: #818cf8;
   font-size: 1.1rem;
 }
 
 .severity-badge {
-  padding: 5px 15px;
-  border-radius: 20px;
+  padding: 6px 16px;
+  border-radius: 999px;
   color: white;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
+
 .drift-explanation {
   font-size: 1rem;
-  color: #374151;
+  color: #e5e7eb;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -141,20 +162,21 @@
 .drift-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 12px;
   padding-top: 15px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .detail-item {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #cbd5f5;
 }
 
 .detail-item strong {
-  color: #374151;
+  color: #f8fafc;
   margin-right: 5px;
 }
+
 
 @media (max-width: 768px) {
   .summary-cards {
