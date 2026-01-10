@@ -1,0 +1,163 @@
+.policy-registry {
+  padding: 30px;
+}
+
+.registry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.registry-header h2 {
+  color: #374151;
+  font-size: 1.8rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+}
+
+.empty-state p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.policy-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.policy-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.policy-card-header h3 {
+  color: #374151;
+  font-size: 1.3rem;
+  cursor: pointer;
+  flex: 1;
+  margin: 0;
+}
+
+.policy-card-header h3:hover {
+  color: #667eea;
+}
+
+.policy-card-content {
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+  margin-left: 10px;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: #fecaca;
+  border-color: #f87171;
+  transform: scale(1.1);
+}
+
+.btn-delete:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.policy-card h3 {
+  color: #374151;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.policy-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.meta-item {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.meta-item strong {
+  color: #374151;
+  margin-right: 5px;
+}
+
+.policy-intent-preview {
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.policy-intent-preview strong {
+  color: #374151;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.policy-intent-preview ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.policy-intent-preview li {
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.policy-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .policies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
