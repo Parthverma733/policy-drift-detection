@@ -1,13 +1,15 @@
-"""Turns drift results into readable text."""
+"""Explanation generator for drift results."""
 
-from typing import List
-from drift_detector import DriftResult
+from typing import List, Dict, Any, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from drift.detector import DriftResult
 
 
-def explain_drift(drift: DriftResult) -> str:
-    """Writes a simple explanation of what went wrong."""
-    constraint_type = drift.constraint["type"]
-    metric_name = drift.constraint["metric"]
+def explain_drift(drift) -> str:
+    """Generate human-readable explanation for a drift."""
+    constraint_type = drift.constraint.get("type")
+    metric_name = drift.constraint.get("metric")
     
     if constraint_type == "minimum_coverage":
         explanation = (
@@ -48,8 +50,8 @@ def explain_drift(drift: DriftResult) -> str:
     return explanation
 
 
-def generate_summary(drifts: List[DriftResult]) -> str:
-    """Creates a summary of all violations found."""
+def generate_summary(drifts: List) -> str:
+    """Generate summary of all drifts."""
     if not drifts:
         return "No policy drift detected. Implementation aligns with policy intent."
     
@@ -88,8 +90,8 @@ def generate_summary(drifts: List[DriftResult]) -> str:
     return "\n".join(summary_lines)
 
 
-def format_drift_report(drifts: List[DriftResult]) -> str:
-    """Builds the full report with summary and details."""
+def format_drift_report(drifts: List) -> str:
+    """Format full drift report."""
     report_lines = [generate_summary(drifts), "", "Detailed Findings:", "=" * 50, ""]
     
     if drifts:
@@ -98,4 +100,3 @@ def format_drift_report(drifts: List[DriftResult]) -> str:
             report_lines.append("")
     
     return "\n".join(report_lines)
-
