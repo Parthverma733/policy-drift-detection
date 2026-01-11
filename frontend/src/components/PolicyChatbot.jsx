@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import './PolicyChatbot.css'
 
-const API_BASE = 'https://policy-drift-detection-1.onrender.com/'
+const API_BASE = 'https://policy-drift-detection-1.onrender.com'
 
 function PolicyChatbot({ policyId }) {
   const [sessionId, setSessionId] = useState(null)

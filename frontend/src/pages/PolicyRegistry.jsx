@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './PolicyRegistry.css'
 
-const API_BASE = 'https://policy-drift-detection-1.onrender.com/'
+const API_BASE = 'https://policy-drift-detection-1.onrender.com'
 
 function PolicyRegistry() {
   const [policies, setPolicies] = useState([])

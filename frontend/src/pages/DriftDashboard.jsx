@@ -4,7 +4,7 @@ import axios from 'axios'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts'
 import './DriftDashboard.css'
 
-const API_BASE = 'https://policy-drift-detection-1.onrender.com/'
+const API_BASE = 'https://policy-drift-detection-1.onrender.com'
 
 function DriftDashboard() {
   const location = useLocation()

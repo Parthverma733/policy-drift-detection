@@ -4,7 +4,7 @@ import axios from 'axios'
 import PolicyChatbot from '../components/PolicyChatbot'
 import './PolicyDetail.css'
 
-const API_BASE = 'https://policy-drift-detection-1.onrender.com/'
+const API_BASE = 'https://policy-drift-detection-1.onrender.com'
 
 function PolicyDetail() {
   const { policyId } = useParams()
