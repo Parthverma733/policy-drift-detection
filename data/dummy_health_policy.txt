@@ -1,0 +1,50 @@
+NATIONAL HEALTH COVERAGE POLICY
+
+Policy Title: Universal Health Access Initiative (UHAI)
+
+OBJECTIVE:
+This comprehensive policy aims to ensure universal access to quality healthcare services across all districts, with special emphasis on districts with literacy rates below 60%, remote areas, and underserved populations. The program mandates minimum health coverage of 80% for priority districts and 85% for standard districts, with consistent monthly monitoring.
+
+TARGET GROUPS:
+1. Districts with literacy rate below 60%
+2. Remote and tribal health zones
+3. Urban slum areas with health access below 70%
+4. Economically disadvantaged populations
+5. Districts with high infant mortality rates
+6. Areas with limited healthcare infrastructure
+
+QUANTITATIVE CONSTRAINTS:
+- Minimum health coverage: 80% for priority districts, 85% for standard districts
+- Maximum monthly variance: 12% month-over-month change allowed
+- Resource utilization: Minimum 75% of allocated health funds must be utilized for priority districts, 80% for standard districts
+- Quality threshold: Health service quality index must be at least 60
+- Consistency period: Monthly monitoring and reporting required
+
+TEMPORAL REQUIREMENTS:
+- Monthly reporting is mandatory
+- Reports must be submitted within 7 days of month end
+- Continuous monitoring without gaps exceeding 15 days
+- Quarterly assessment of fund utilization
+- Annual comprehensive evaluation required
+
+RESOURCE ALLOCATION RULES:
+- Health funds must be distributed based on population needs and vulnerability
+- Priority allocation to districts with literacy rate < 60%
+- No health zone should receive zero allocation
+- Allocation must be proportional to population and health indicators
+- Special allocation for primary healthcare centers in remote areas
+
+MONITORING AND EVALUATION:
+- Monthly review of coverage and access metrics
+- Quarterly assessment of fund utilization rates
+- Annual evaluation of health quality indices
+- Immediate intervention required for districts with coverage below thresholds
+- Variance monitoring to detect implementation inconsistencies
+
+IMPLEMENTATION GUIDELINES:
+All health departments must ensure:
+1. Coverage does not drop below 80% threshold for priority districts
+2. Monthly variance remains within 12% limit
+3. Fund utilization meets minimum requirements
+4. Regular monthly reporting without gaps
+5. Quality standards are maintained across all districts

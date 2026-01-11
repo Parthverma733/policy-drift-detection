@@ -1,0 +1,31 @@
+district_id,district_name,literacy_rate,population,coverage_percentage,fund_utilization,month,monthly_variance
+A001,Fertile Plains,68.4,92000,74.8,65.2,2024-01,15.8
+A001,Fertile Plains,68.4,92000,77.5,68.9,2024-02,13.2
+A001,Fertile Plains,68.4,92000,72.1,61.5,2024-03,18.4
+A002,Dry Land Region,59.7,78000,66.3,54.8,2024-01,22.6
+A002,Dry Land Region,59.7,78000,69.8,58.2,2024-02,19.4
+A002,Dry Land Region,59.7,78000,63.1,51.2,2024-03,26.1
+A003,Irrigation Zone,71.2,65000,79.2,69.5,2024-01,11.7
+A003,Irrigation Zone,71.2,65000,81.8,72.8,2024-02,9.8
+A003,Irrigation Zone,71.2,65000,76.9,66.1,2024-03,13.9
+A004,Mountain Farms,55.8,49000,61.4,48.3,2024-01,29.5
+A004,Mountain Farms,55.8,49000,64.7,52.1,2024-02,25.8
+A004,Mountain Farms,55.8,49000,58.2,44.7,2024-03,33.2
+A005,Coastal Agriculture,73.9,56000,80.5,71.2,2024-01,10.4
+A005,Coastal Agriculture,73.9,56000,82.9,74.6,2024-02,8.7
+A005,Coastal Agriculture,73.9,56000,78.3,67.8,2024-03,12.3
+A006,Organic Farm Region,69.5,44000,75.2,64.8,2024-01,14.6
+A006,Organic Farm Region,69.5,44000,77.8,68.1,2024-02,12.3
+A006,Organic Farm Region,69.5,44000,72.9,61.5,2024-03,17.2
+A007,Subsistence Farmers,51.3,62000,57.8,43.2,2024-01,34.8
+A007,Subsistence Farmers,51.3,62000,61.2,47.5,2024-02,31.2
+A007,Subsistence Farmers,51.3,62000,54.5,39.1,2024-03,38.9
+A008,Cash Crop Zone,76.1,71000,82.4,73.8,2024-01,9.2
+A008,Cash Crop Zone,76.1,71000,84.7,76.5,2024-02,7.6
+A008,Cash Crop Zone,76.1,71000,80.3,71.2,2024-03,10.9
+A009,Tribal Agriculture,48.9,55000,54.2,38.7,2024-01,42.3
+A009,Tribal Agriculture,48.9,55000,57.6,42.1,2024-02,38.9
+A009,Tribal Agriculture,48.9,55000,51.1,35.4,2024-03,45.8
+A010,Commercial Farms,80.3,98000,86.7,79.5,2024-01,6.8
+A010,Commercial Farms,80.3,98000,88.4,81.9,2024-02,5.9
+A010,Commercial Farms,80.3,98000,85.2,77.2,2024-03,7.8

@@ -1,0 +1,64 @@
+{
+  "scheme_name": "Universal Health Coverage Scheme",
+  "target_groups": [
+    {
+      "name": "priority_districts",
+      "criteria": {
+        "literacy_rate": {"max": 60.0},
+        "population": {"min": 50000}
+      },
+      "allocation_priority": 1
+    },
+    {
+      "name": "standard_districts",
+      "criteria": {
+        "literacy_rate": {"min": 60.0, "max": 80.0}
+      },
+      "allocation_priority": 2
+    },
+    {
+      "name": "high_performing_districts",
+      "criteria": {
+        "literacy_rate": {"min": 80.0}
+      },
+      "allocation_priority": 3
+    }
+  ],
+  "constraints": [
+    {
+      "type": "minimum_coverage",
+      "metric": "coverage_percentage",
+      "threshold": 80.0,
+      "applies_to": "priority_districts"
+    },
+    {
+      "type": "minimum_coverage",
+      "metric": "coverage_percentage",
+      "threshold": 85.0,
+      "applies_to": "standard_districts"
+    },
+    {
+      "type": "temporal_consistency",
+      "metric": "monthly_variance",
+      "threshold": 12.0,
+      "applies_to": "all"
+    },
+    {
+      "type": "resource_allocation",
+      "metric": "fund_utilization",
+      "threshold": 75.0,
+      "applies_to": "priority_districts"
+    },
+    {
+      "type": "resource_allocation",
+      "metric": "fund_utilization",
+      "threshold": 80.0,
+      "applies_to": "standard_districts"
+    }
+  ],
+  "target_metrics": {
+    "coverage_percentage": {"min": 75.0},
+    "fund_utilization": {"min": 70.0},
+    "monthly_variance": {"max": 15.0}
+  }
+}

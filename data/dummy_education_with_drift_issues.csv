@@ -1,0 +1,16 @@
+district_id,district_name,literacy_rate,population,coverage_percentage,fund_utilization,month,monthly_variance
+ED001,Low Performance District,48.2,82000,52.3,38.7,2024-01,45.8
+ED001,Low Performance District,48.2,82000,48.1,35.2,2024-02,52.3
+ED001,Low Performance District,48.2,82000,55.8,42.1,2024-03,38.9
+ED002,High Variance District,65.4,71000,75.2,62.4,2024-01,28.7
+ED002,High Variance District,65.4,71000,82.9,71.8,2024-02,18.5
+ED002,High Variance District,65.4,71000,68.4,54.2,2024-03,35.2
+ED003,Low Fund Utilization,61.8,68000,72.6,42.3,2024-01,24.8
+ED003,Low Fund Utilization,61.8,68000,74.9,45.1,2024-02,22.4
+ED003,Low Fund Utilization,61.8,68000,70.2,39.8,2024-03,27.5
+ED004,Consistent Performer,78.5,55000,88.9,85.2,2024-01,5.2
+ED004,Consistent Performer,78.5,55000,90.1,87.4,2024-02,4.8
+ED004,Consistent Performer,78.5,55000,87.6,83.1,2024-03,5.7
+ED005,Declining Coverage,72.1,64000,82.5,69.8,2024-01,12.3
+ED005,Declining Coverage,72.1,64000,78.2,65.4,2024-02,16.8
+ED005,Declining Coverage,72.1,64000,74.1,60.9,2024-03,20.5

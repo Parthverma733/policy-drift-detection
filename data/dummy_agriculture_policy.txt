@@ -1,0 +1,50 @@
+NATIONAL AGRICULTURE DEVELOPMENT POLICY
+
+Policy Title: Comprehensive Agriculture Support Program (CASP)
+
+OBJECTIVE:
+This policy aims to enhance agricultural productivity and support farmers across all districts, with special focus on districts with literacy rates below 65%, dry land regions, and subsistence farming communities. The program mandates minimum coverage of 70% for priority districts and 75% for standard districts, with consistent monitoring of agricultural support services.
+
+TARGET GROUPS:
+1. Districts with literacy rate below 65%
+2. Dry land and rain-fed agriculture regions
+3. Subsistence farming communities
+4. Tribal and indigenous farming areas
+5. Small and marginal farmers
+6. Districts with low agricultural productivity
+
+QUANTITATIVE CONSTRAINTS:
+- Minimum coverage: 70% for priority districts, 75% for standard districts
+- Maximum monthly variance: 20% month-over-month change allowed
+- Resource utilization: Minimum 60% of allocated agriculture funds must be utilized for priority districts, 65% for standard districts
+- Productivity threshold: Agricultural productivity index must be at least 50
+- Consistency period: Monthly monitoring required
+
+TEMPORAL REQUIREMENTS:
+- Monthly reporting is mandatory
+- Reports must be submitted within 10 days of month end
+- Seasonal variations must be accounted for in variance calculations
+- Quarterly assessment of fund utilization
+- Annual comprehensive evaluation of agricultural outcomes
+
+RESOURCE ALLOCATION RULES:
+- Agriculture funds must be distributed based on farmer population and agricultural area
+- Priority allocation to districts with literacy rate < 65%
+- Allocation proportional to agricultural land and farmer density
+- Special allocation for irrigation projects in dry regions
+- Support for organic farming initiatives
+
+MONITORING AND EVALUATION:
+- Monthly review of coverage and support metrics
+- Quarterly assessment of fund utilization
+- Annual evaluation of agricultural productivity indices
+- Immediate intervention for districts with coverage below thresholds
+- Variance monitoring accounting for seasonal patterns
+
+IMPLEMENTATION GUIDELINES:
+All agriculture departments must ensure:
+1. Coverage does not drop below 70% threshold for priority districts
+2. Monthly variance remains within 20% limit (accounting for seasonality)
+3. Fund utilization meets minimum requirements
+4. Regular monthly reporting without gaps
+5. Support services reach all eligible farmers

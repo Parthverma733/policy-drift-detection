@@ -1,0 +1,16 @@
+district_id,district_name,literacy_rate,population,coverage_percentage,fund_utilization,month,monthly_variance
+HC001,Well Managed District,81.3,98000,92.5,88.7,2024-01,3.8
+HC001,Well Managed District,81.3,98000,93.8,90.2,2024-02,3.2
+HC001,Well Managed District,81.3,98000,91.2,87.3,2024-03,4.1
+HC002,Improving District,68.7,72000,76.8,71.5,2024-01,9.4
+HC002,Improving District,68.7,72000,79.2,74.8,2024-02,8.1
+HC002,Improving District,68.7,72000,74.5,68.2,2024-03,10.8
+HC003,Stable Performer,75.4,61000,83.1,76.9,2024-01,6.7
+HC003,Stable Performer,75.4,61000,84.6,78.5,2024-02,6.1
+HC003,Stable Performer,75.4,61000,81.8,75.3,2024-03,7.4
+HC004,Excellent Coverage,84.2,112000,94.2,91.5,2024-01,2.9
+HC004,Excellent Coverage,84.2,112000,95.1,92.8,2024-02,2.5
+HC004,Excellent Coverage,84.2,112000,93.4,90.3,2024-03,3.2
+HC005,Good Utilization,70.8,69000,79.6,73.2,2024-01,8.5
+HC005,Good Utilization,70.8,69000,81.9,76.1,2024-02,7.3
+HC005,Good Utilization,70.8,69000,77.4,70.5,2024-03,9.8

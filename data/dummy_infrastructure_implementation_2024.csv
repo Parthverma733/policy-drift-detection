@@ -1,0 +1,31 @@
+district_id,district_name,literacy_rate,population,coverage_percentage,fund_utilization,month,monthly_variance
+I001,Highway Corridor,74.2,105000,81.3,72.5,2024-01,11.4
+I001,Highway Corridor,74.2,105000,83.8,75.2,2024-02,9.6
+I001,Highway Corridor,74.2,105000,79.1,69.8,2024-03,13.2
+I002,Rural Road Network,58.6,67000,65.7,54.3,2024-01,24.8
+I002,Rural Road Network,58.6,67000,68.9,58.1,2024-02,21.3
+I002,Rural Road Network,58.6,67000,62.4,50.5,2024-03,28.4
+I003,Urban Infrastructure,83.5,132000,89.2,83.7,2024-01,4.8
+I003,Urban Infrastructure,83.5,132000,91.1,86.2,2024-02,4.1
+I003,Urban Infrastructure,83.5,132000,87.6,81.4,2024-03,5.6
+I004,Bridge Construction Zone,61.3,52000,68.4,57.2,2024-01,19.7
+I004,Bridge Construction Zone,61.3,52000,71.2,60.8,2024-02,16.8
+I004,Bridge Construction Zone,61.3,52000,65.8,53.6,2024-03,23.1
+I005,Water Supply Region,69.8,89000,76.5,67.4,2024-01,14.2
+I005,Water Supply Region,69.8,89000,79.1,70.8,2024-02,11.9
+I005,Water Supply Region,69.8,89000,74.2,64.1,2024-03,16.8
+I006,Remote Access Area,52.4,48000,58.9,44.2,2024-01,32.5
+I006,Remote Access Area,52.4,48000,62.1,48.5,2024-02,28.9
+I006,Remote Access Area,52.4,48000,55.8,40.1,2024-03,36.2
+I007,Power Grid Zone,77.6,114000,84.3,76.8,2024-01,8.7
+I007,Power Grid Zone,77.6,114000,86.7,79.5,2024-02,7.3
+I007,Power Grid Zone,77.6,114000,82.2,74.2,2024-03,10.2
+I008,Telecom Infrastructure,72.1,76000,78.9,69.6,2024-01,12.8
+I008,Telecom Infrastructure,72.1,76000,81.4,72.9,2024-02,10.7
+I008,Telecom Infrastructure,72.1,76000,76.7,66.4,2024-03,15.1
+I009,Mountain Connectivity,54.7,41000,61.2,48.9,2024-01,27.6
+I009,Mountain Connectivity,54.7,41000,64.5,52.7,2024-02,24.1
+I009,Mountain Connectivity,54.7,41000,58.1,45.2,2024-03,31.4
+I010,Coastal Development,75.4,93000,82.1,74.3,2024-01,10.1
+I010,Coastal Development,75.4,93000,84.6,77.6,2024-02,8.5
+I010,Coastal Development,75.4,93000,79.8,71.2,2024-03,11.9

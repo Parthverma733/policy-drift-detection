@@ -1,0 +1,64 @@
+{
+  "scheme_name": "Comprehensive Agriculture Support Program",
+  "target_groups": [
+    {
+      "name": "priority_districts",
+      "criteria": {
+        "literacy_rate": {"max": 65.0},
+        "population": {"min": 50000}
+      },
+      "allocation_priority": 1
+    },
+    {
+      "name": "standard_districts",
+      "criteria": {
+        "literacy_rate": {"min": 65.0, "max": 80.0}
+      },
+      "allocation_priority": 2
+    },
+    {
+      "name": "commercial_farm_districts",
+      "criteria": {
+        "literacy_rate": {"min": 75.0}
+      },
+      "allocation_priority": 3
+    }
+  ],
+  "constraints": [
+    {
+      "type": "minimum_coverage",
+      "metric": "coverage_percentage",
+      "threshold": 70.0,
+      "applies_to": "priority_districts"
+    },
+    {
+      "type": "minimum_coverage",
+      "metric": "coverage_percentage",
+      "threshold": 75.0,
+      "applies_to": "standard_districts"
+    },
+    {
+      "type": "temporal_consistency",
+      "metric": "monthly_variance",
+      "threshold": 20.0,
+      "applies_to": "all"
+    },
+    {
+      "type": "resource_allocation",
+      "metric": "fund_utilization",
+      "threshold": 60.0,
+      "applies_to": "priority_districts"
+    },
+    {
+      "type": "resource_allocation",
+      "metric": "fund_utilization",
+      "threshold": 65.0,
+      "applies_to": "standard_districts"
+    }
+  ],
+  "target_metrics": {
+    "coverage_percentage": {"min": 65.0},
+    "fund_utilization": {"min": 55.0},
+    "monthly_variance": {"max": 25.0}
+  }
+}
