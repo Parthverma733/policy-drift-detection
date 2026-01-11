@@ -8,4 +8,5 @@ Write-Host "MongoDB URI: $env:MONGODB_URI"
 Write-Host "Database: $env:MONGODB_DB"
 Write-Host ""
 
-python main.py
+uvicorn main:app --reload
+

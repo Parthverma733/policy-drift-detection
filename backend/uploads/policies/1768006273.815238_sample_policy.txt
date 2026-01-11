@@ -1,0 +1,20 @@
+Rural Education Support Scheme
+
+Policy Document
+
+This policy aims to provide comprehensive educational support to rural districts with low literacy rates.
+
+Target Groups:
+- Priority districts with literacy rate below 70%
+- Districts with population above 50,000
+
+Policy Requirements:
+- Minimum coverage percentage of 80% for priority districts
+- Minimum fund utilization of 90% for priority districts
+- Maximum monthly variance of 10% to ensure consistent implementation
+
+Temporal Rules:
+- Reporting should be done monthly
+- Consistency checks should be performed on a monthly basis
+
+This policy is effective from April 2023 and will continue until March 2026.

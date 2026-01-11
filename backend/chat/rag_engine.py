@@ -16,25 +16,26 @@ load_dotenv(override=False)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 print(f"DEBUG: GEMINI_API_KEY loaded: {'Yes' if GEMINI_API_KEY else 'No'}")
 
-# Initialize Gemini client (new SDK)
-gemini_client = None
-if GEMINI_API_KEY:
-    try:
-        gemini_client = genai.Client(api_key=GEMINI_API_KEY)
-        print("✓ Gemini client initialized (google-genai)")
-    except Exception as e:
-        print(f"❌ Failed to initialize Gemini client: {e}")
-        gemini_client = None
-else:
-    print("⚠️ No GEMINI_API_KEY found, using fallback mode")
+# # Initialize Gemini client (new SDK)
+# gemini_client = None
+# if GEMINI_API_KEY:
+#     try:
+#         gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+#         print("✓ Gemini client initialized (google-genai)")
+#     except Exception as e:
+#         print(f"❌ Failed to initialize Gemini client: {e}")
+#         gemini_client = None
+# else:
+#     print("⚠️ No GEMINI_API_KEY found, using fallback mode")
 
 
 class PolicyChatbot:
     """Policy-aware chatbot using RAG with Gemini API."""
 
     def __init__(self):
-        self.client = gemini_client
-        self.model_name = "models/gemini-pro"
+        self.client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
+        self.model_name ="gemini-2.5-flash"
+
         print(f"DEBUG: Chatbot initialized, Gemini enabled: {bool(self.client)}")
 
     # ------------------------------------------------------------------
@@ -67,7 +68,7 @@ class PolicyChatbot:
             "policy": None,
             "policy_text": "",
             "drift_results": [],
-            "summaries": {}
+            "summaries": {},
         }
 
         policy_obj_id = ObjectId(policy_id)
@@ -77,7 +78,7 @@ class PolicyChatbot:
             context["policy"] = {
                 "title": policy.get("title"),
                 "ministry": policy.get("ministry"),
-                "extracted_intent": policy.get("extracted_intent", {})
+                "extracted_intent": policy.get("extracted_intent", {}),
             }
 
             file_path = policy.get("raw_document_path")
@@ -87,16 +88,22 @@ class PolicyChatbot:
         query_lower = query.lower()
         drift_collection = db["drift_results"]
 
-        if any(w in query_lower for w in ["drift", "violation", "flag", "district", "issue"]):
-            drifts = await drift_collection.find(
-                {"policy_id": policy_obj_id}
-            ).limit(30).to_list(length=30)
+        if any(
+            w in query_lower
+            for w in ["drift", "violation", "flag", "district", "issue"]
+        ):
+            drifts = (
+                await drift_collection.find({"policy_id": policy_obj_id})
+                .limit(30)
+                .to_list(length=30)
+            )
 
             district_match = re.search(r"district\s+(\w+)", query_lower)
             if district_match:
                 name = district_match.group(1)
                 drifts = [
-                    d for d in drifts
+                    d
+                    for d in drifts
                     if name.lower() in d.get("district_name", "").lower()
                 ]
 
@@ -167,7 +174,7 @@ Provide a clear, structured answer.
             response = await asyncio.to_thread(
                 self.client.models.generate_content,
                 model=self.model_name,
-                contents=prompt
+                contents=prompt,
             )
             return response.text or "No response generated."
 
